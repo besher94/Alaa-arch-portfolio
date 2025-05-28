@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import About from "./About";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Footer from "./Footer";
-import Gallery from "./gallery";
+import Gallery from "./Gallery";
 
 import ProjectDetails from "./ProjectDetails";
 function App() {
