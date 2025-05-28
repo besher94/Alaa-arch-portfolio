@@ -1,0 +1,102 @@
+/* الزر */
+.toggle-btn {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  color: #5a3e36;
+  border: none;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 111;
+  margin-left: 10px;
+}
+.toggle-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* أساس النافبار */
+.navbar {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 70px;
+  border-radius: 8px;
+  position: fixed;
+
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* تفتح */
+.navbar.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transform: translateX(0);
+  box-shadow: 200px 200px 15px 200px rgba(0, 0, 0, 0.36);
+}
+
+/* تسكّر */
+.navbar.close {
+  transform: translateX(-100%);
+}
+
+/* أيقونات */
+.nav-icons {
+  color: #5a3e36;
+  margin-left: 7px;
+}
+.nav-icons:hover {
+  cursor: pointer;
+}
+.nav-icons.b {
+  margin-top: 30px;
+}
+
+/* الروابط */
+.l {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.d {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.d:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* الديسكتوب */
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+    display: none;
+  }
+
+  .navbar {
+    width: 70px;
+    transform: translateX(0) !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-shadow: none !important;
+    overflow: hidden;
+    overflow-y: auto;
+    gap: 20px;
+    flex-wrap: nowrap;
+    border-right: 1px solid black;
+  }
+  .nav-icons {
+    font-size: 24px;
+  }
+}

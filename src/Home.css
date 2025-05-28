@@ -1,0 +1,251 @@
+.main-img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  border: 1px solid #5a3e36;
+  filter: brightness(70%);
+}
+.hero-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.alaa {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  border: 1px solid #5a3e36;
+}
+.main {
+  padding: 4%;
+}
+.cv {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile {
+  margin-top: 20px;
+
+  padding: 20px;
+  /*background-color: rgba(49, 142, 255, 0.664);
+  border-radius: 10px;*/
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.profile p {
+  font-size: larger;
+}
+.list {
+  padding: 20px;
+}
+li {
+  margin-bottom: 7px;
+  font-size: 1.1rem;
+}
+ul {
+  border-bottom: 1px solid black;
+}
+
+.contact {
+  padding: 20px;
+}
+.contact-details {
+  margin-left: 5px;
+
+  text-decoration: underline;
+}
+.mail-div {
+  margin-bottom: 7px;
+}
+.home-icons {
+  color: rgb(93, 63, 0);
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 7px;
+}
+
+.projects-div {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 20px;
+  padding-top: 0;
+  scroll-behavior: smooth;
+}
+
+.project-card {
+  min-width: 250px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  background: beige;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideIn 0.6s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-projects {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.home-projects:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+  transform: scale(1.05);
+}
+#p {
+  padding: 8%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 6%;
+  margin-bottom: 20px;
+}
+span {
+  font-weight: 600;
+  text-decoration: none !important;
+}
+#show-projects {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #5a4a3c;
+  color: beige;
+  width: 200px;
+  height: 50px;
+  font-size: larger;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+#show-projects:hover {
+  background-color: beige;
+  color: #5a4a3c;
+  opacity: 0.7;
+}
+.h-link {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 576px) {
+  .main-img {
+    height: 500px;
+    object-fit: cover;
+  }
+  em {
+    font-size: 4rem;
+  }
+  .main {
+    padding-top: 0%;
+    margin-left: 60px;
+  }
+  .main a,
+  span,
+  li,
+  p {
+    font-size: 1.5rem;
+  }
+  .projects-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 40px;
+
+    scroll-snap-type: none;
+  }
+  .project-card {
+    min-width: auto;
+  }
+
+  .home-projects {
+    height: 400px;
+  }
+  #p {
+    padding-left: 0.2rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  h1,
+  h2,
+  li,
+  span {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+  .contact {
+    margin-bottom: 30px;
+  }
+  .mail-div {
+    margin-bottom: 20px;
+  }
+
+  .about-main {
+    margin-left: 70px;
+  }
+  .about-main img {
+    height: 700px;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .gallery-main {
+    margin-left: 40px;
+    padding-top: 0% !important;
+  }
+  .project-details-main {
+    margin-left: 80px;
+  }
+
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .details-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding: 1% !important;
+  }
+  footer {
+    margin-top: 40px;
+  }
+  .contact-main a {
+    width: 500px;
+  }
+  .accordion summary {
+    font-size: x-large;
+    margin-bottom: 30px;
+  }
+}
