@@ -17,12 +17,12 @@ const Home = () => {
         </h1>
         <img
           className="main-img"
-          src="src/assets/modern living & dinning 2.JPEG"
+          src="public/arch2/modern living & dinning 2.JPEG"
           alt="interior design"
         />
         <img
           className="alaa"
-          src="src/assets/photo_2025-05-19_14-22-27.jpg"
+          src="public/arch2/photo_2025-05-19_14-22-27.jpg"
           alt=""
         />
       </div>
