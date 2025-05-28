@@ -11,7 +11,7 @@ const About = () => {
           <h1>ABOUT ME</h1>
           <img
             className="about-img"
-            src="public/arch2/472830124_922335293433875_805654312278734770_n.jpg"
+            src="/arch2/472830124_922335293433875_805654312278734770_n.jpg"
             alt="alaa"
           />
         </div>
